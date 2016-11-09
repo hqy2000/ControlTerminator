@@ -16,8 +16,8 @@ class WorkerThread : public QThread
         QString k_f,b_f;
         if(Function_Name.left(2)=="y=")
         {
-            QMessageBox::Warning(NULL,"错误","函数左端不为y=！");
-            WorkerThread.quit();
+            QMessageBox::warning(NULL,"错误","函数左端不为y=！");
+            WorkerThread::quit();
             return;
         }
 
@@ -41,7 +41,7 @@ class WorkerThread : public QThread
         }
         else
         {
-            QMessageBox::Warning(NULL,"错误","函数左端不为y=！");
+            QMessageBox::warning(NULL,"错误","函数左端不为y=！");
         }
 
 
