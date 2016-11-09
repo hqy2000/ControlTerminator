@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/dll">
+        <file>Process.dll</file>
+        <file>Thread.dll</file>
+    </qresource>
+    <qresource prefix="/exe"/>
+</RCC>
